@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>Frequentyly Asked Questions (FAQs)</h1>
+        <div className='faqouter'>
+          <div className='faqItems'>
+            <h2>Popular Articles</h2>
+              <p>Participate in the design and creation of scalable software.
+                Write clean, functional code on the front- and back-end.
+                Test and fix bugs or other coding issues.
+                </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
