@@ -17,4 +17,10 @@
   transform: scaleY(0);
   padding: 0px;
   margin: 0;
+  transition: 0.5s;
+}
+.activeAns{
+  height: auto !important;
+  transform: scaleY() !important;
+  padding: 10px !important;
 }

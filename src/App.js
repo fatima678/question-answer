@@ -1,19 +1,28 @@
 
+import { useState } from 'react';
 import './App.css';
+import { questions } from './Data/faqQuestion';
 
 function App() {
+  let [showAns, setShowAns] = useState(questions[0].id)
   return (
     <div className="App">
       <div>
         <h1>Frequentyly Asked Questions (FAQs)</h1>
         <div className='faqouter'>
-          <div className='faqItems'>
-            <h2>Popular Articles</h2>
-              <p>Participate in the design and creation of scalable software.
-                Write clean, functional code on the front- and back-end.
-                Test and fix bugs or other coding issues.
-                </p>
+          {questions.map((faqItems, i)=>{
+            return(
+            <div className='faqItems'>
+            <h2>{faqItems.question}</h2>
+              <p className={showAns===faqItems.id ? 'activeAns': ''}>{faqItems.answer}
+              </p>
           </div>
+        )
+      }
+      )
+      }
+          
+          
         </div>
       </div>
 
